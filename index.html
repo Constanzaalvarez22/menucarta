@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú del Restaurante</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffaf0;
+      color: #4b3b2b;
+      padding: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #8b5e3c;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-style: italic;
+      color: #b7986d;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      border-bottom: 3px solid #cbb78e;
+      padding-bottom: 8px;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #a07145;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 10px;
+      border-bottom: 1px solid #d9c9b0;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .item:hover {
+      background-color: #f5e8d3;
+    }
+
+    .item-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      max-width: 70%;
+    }
+
+    .price {
+      color: #8b5e3c;
+      font-weight: 700;
+      font-size: 1.1rem;
+      min-width: 60px;
+      text-align: right;
+    }
+
+    /* Botón reservas */
+    .btn-reservas {
+      display: block;
+      background-color: #a07145;
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 15px 0;
+      margin: 40px auto 20px;
+      max-width: 300px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(160, 113, 69, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-reservas:hover {
+      background-color: #8b5e3c;
+      box-shadow: 0 6px 12px rgba(139, 94, 60, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+        max-width: 100%;
+      }
+
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .price {
+        margin-top: 6px;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Viñita Gourmet</h1>
+    <p>Menú especial - ¡Disfruta nuestros sabores!</p>
+  </header>
+
+  <div class="section">
+    <h2>Entradas</h2>
+    <div class="item">
+      <div class="item-name">Empanadas de queso</div>
+      <div class="price">$4.000</div>
+    </div>
+    <div class="item">
+      <div class="item-name">Ceviche de camarón</div>
+      <div class="price">$6.500</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Platos Principales</h2>
+    <div class="item">
+      <div class="item-name">Lomo a lo pobre</div>
+      <div class="price">$12.000</div>
+    </div>
+    <div class="item">
+      <div class="item-name">Salmón grillado con papas</div>
+      <div class="price">$13.500</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Bebidas</h2>
+    <div class="item">
+      <div class="item-name">Jugo natural</div>
+      <div class="price">$2.500</div>
+    </div>
+    <div class="item">
+      <div class="item-name">Copa de vino</div>
+      <div class="price">$3.500</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Postres</h2>
+    <div class="item">
+      <div class="item-name">Tiramisú</div>
+      <div class="price">$3.000</div>
+    </div>
+    <div class="item">
+      <div class="item-name">Helado artesanal</div>
+      <div class="price">$2.800</div>
+    </div>
+  </div>
+
+  <!-- Botón de reservas -->
+  <a href="https://wa.me/56912345678?text=Hola%20quiero%20hacer%20una%20reserva" target="_blank" class="btn-reservas" rel="noopener noreferrer">
+    📅 Reservar ahora
+  </a>
+</body>
+</html>
